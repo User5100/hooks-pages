@@ -1,0 +1,82 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/dist/css/bootstrap.min";
+
+body {
+  overflow-y: scroll;
+}
+
+$primary-color: white;
+$bg: black;
+h1 {
+  color: $primary-color;
+  background-color: $bg;
+}
+
+.tabs {
+  position: relative;
+  min-height: 600px;
+  clear: both;
+  margin: 25px 0;
+  background-color: lightgray;
+}
+
+.tab {
+  float: left;
+}
+
+.tab label {
+  background-color: #eeeeee;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  margin-left: -1px;
+  margin-bottom: 0;
+  position: relative;
+  left: 1px;
+}
+
+.tab [type="radio"] {
+  display: none;
+}
+
+.content {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #ffffff;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  border: 1px solid #cccccc;
+}
+
+tbody tr {
+  opacity: 0;
+}
+
+[type="radio"]:checked ~ label {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  z-index: 2;
+}
+
+[type="radio"]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+[type="radio"]:checked ~ label ~ .content tbody tr {
+  animation-name: fadeIn;
+  animation-duration: 120ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

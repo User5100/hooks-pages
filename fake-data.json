@@ -1,0 +1,113 @@
+{
+  "hooks": [
+    {
+      "id": 1,
+      "name": "webhook 1",
+      "payloadUrl": "pl 1",
+      "secret": "ssshhh 1",
+      "active": true,
+      "triggerOnallEvents": true,
+      "events": [
+        {
+          "name": "NPS",
+          "send": true
+        },
+        {
+          "name": "referrerRegistration",
+          "send": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "webhook 2",
+      "payloadUrl": "pl 2",
+      "secret": "ssshhh 2",
+      "active": false,
+      "triggerOnallEvents": false,
+      "events": [
+        {
+          "name": "NPS",
+          "send": false
+        },
+        {
+          "name": "referrerRegistration",
+          "send": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "webhook 3",
+      "payloadUrl": "pl 3",
+      "secret": "ssshhh 3",
+      "active": false,
+      "triggerONAllEvents": false,
+      "events": [
+        {
+          "name": "NPS",
+          "send": true
+        },
+        {
+          "name": "referrerRegistration",
+          "send": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "webhook 4",
+      "payloadUrl": "pl 4",
+      "secret": "ssshhh 4",
+      "active": true,
+      "triggerOnAllEvents": true,
+      "events": [
+        {
+          "name": "NPS",
+          "send": true
+        },
+        {
+          "name": "referrerRegistration",
+          "send": true
+        }
+      ]
+    },
+    {
+      "id": "bb88ac22-5b8d-4335-a3c1-5b7284ad4bfa",
+      "name": "number 5",
+      "payloadUrl": "url5",
+      "secret": "secret 5",
+      "triggerOnAllEvents": true,
+      "active": false,
+      "events": []
+    },
+    {
+      "id": "ee643fc0-f753-47a8-8351-266848fa01b9",
+      "name": "wwww",
+      "payloadUrl": "",
+      "secret": "wwwwww",
+      "triggerOnAllEvents": false,
+      "NPS": false,
+      "Referrer Registration": false,
+      "active": false
+    },
+    {
+      "id": "576a791f-cc6a-4a14-b303-ca38bdde4156",
+      "name": "hello",
+      "payloadUrl": "mannn",
+      "secret": "hehehe",
+      "triggerOnAllEvents": false,
+      "active": true,
+      "events": [
+        {
+          "name": "nps",
+          "send": true
+        },
+        {
+          "name": "referrerRegistration",
+          "send": true
+        }
+      ]
+    }
+  ]
+}
